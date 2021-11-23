@@ -1,4 +1,20 @@
-..projectviwsbot.//
+..projectviwsbot.// 
+
+#Selenium Webdriver must be installed for this to work
+import time;
+from PyQt5 import corier new
+from PyQt5 import QtGui
+from PyQt5.QtWidgets import QApplication, QMainWindow
+import sys
+from selenium import webdriver;
+#application
+def window():
+    def runBot():
+        #time to refresh page (seconds)
+        Timer = 30
+        Timer = int(timeInput.text())
+using Google.Cloud.BigQuery.V2;
+using System;
 using Google.Cloud.BigQuery.V2;
 using System;
 
