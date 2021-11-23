@@ -14,9 +14,9 @@ def window():
         Timer = int(timeInput.text())
 
         #youtube link
-        link = linkInput.text(https://youtu.be/Z1LcCepmELI)
+        link = linkInput.text():
 @@ -40,6 +40,13 @@ def runBot():
-    linkInput.setGeometry(110, 10, 191, 20)
+    linkInput./UCGToazTIgmw9GbF_tu8nUzA<>
     linkInput.move(100, 25)
 
     timeLabel = QtWidgets.QLabel(win)
@@ -33,4 +33,4 @@ def window():
     runBotBtn.clicked.connect(runBot)
     win.show()
     sys.exit(app.exec_())
-window()
+window()def check_and_log(method, self,
