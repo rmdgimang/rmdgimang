@@ -1,19 +1,32 @@
 ..projectviwsbot.//
-#Selenium Webdriver must be installed for this to work
-import time;
-from PyQt5 import QtWidgets
-from PyQt5 import QtGui
-from PyQt5.QtWidgets import QApplication, QMainWindow
-import sys
-from selenium import webdriver;
-#application
-def window():
-    def runBot():
-        #time to refresh page (seconds)
-        Timer = 30
-        Timer = int(timeInput.text())
+using Google.Cloud.BigQuery.V2;
+using System;
 
-        #youtube link
+public class BigQueryQuery
+{
+    public void Query(
+        string projectId = "your-project-id"
+    )
+    {
+        BigQueryClient client = BigQueryClient.Create(projectId);
+        string query = @"
+            SELECT name FROM `bigquery-public-data.usa_names.usa_1910_2013`
+            WHERE state = 'TX'
+            LIMIT 100";
+        BigQueryJob job = client.CreateQueryJob(
+            sql: query,
+            parameters: null,
+            options: new QueryOptions { UseQueryCache = false });
+        // Wait for the job to complete.
+        job.PollUntilCompleted();
+        // Display the results
+        foreach (BigQueryRow row in client.GetQueryResults(job.Reference))
+        {
+            Console.WriteLine($"{row["name"]}");
+        }
+    }
+}
+        >youtube link< 
         link = linkInput.text():
 @@ -40,6 +40,13 @@ def runBot():
     linkInput./UCGToazTIgmw9GbF_tu8nUzA<>
